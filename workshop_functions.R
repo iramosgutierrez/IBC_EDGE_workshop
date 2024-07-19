@@ -195,7 +195,7 @@ EDGE2_mod <- function(tree, pext){
   for(i in 1:length(nodes)){
     tree@edge.length[i] <- tree@edge.length[i]*node_data[i,2]
   }
-  save(tree, file ="tree.rda")
+  # save(tree, file ="tree.rda")
   
   if (is.na(tree@edge.length[root])){
     tree@edge.length[root] <- 0
